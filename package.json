@@ -15,6 +15,7 @@
     "dev": "NODE_ENV=dev npm run start-config && nodemon ./src/server.ts --ignore ./uploads",
     "stage": "NODE_ENV=stage npm run start-config && nodemon ./src/server.ts --ignore ./uploads",
     "prod": "NODE_ENV=prod npm run start-config && npm run build && npm run start",
+    "private": "NODE_ENV=private npm run start-config && npm run build && npm run start",
     "dev2": "ts-node ./src/server.ts",
     "build": "rimraf ./dist && tsc && cp -R -v src/public dist/src",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",

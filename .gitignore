@@ -107,6 +107,7 @@ uploads/
 .env.dev
 .env.stage
 .env.prod
+.env.private
 # configuration file genereated by start-config.ts
 env.config.ts
 www
