@@ -3,7 +3,6 @@ import * as bodyParser from 'body-parser';
 import favicon from 'serve-favicon';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
-import winston from './config/winston-config-rotate';
 import { LoggerStream } from './config/winston-config-rotate';
 import express from 'express';
 import listEndpoints from 'express-list-endpoints';
@@ -71,6 +70,11 @@ class App {
     // serve angular frontend
     this.app.use(express.static(config.webDir));
 
+    // fix 404 error after refresh page built with angular,
+    // see https://stackoverflow.com/questions/54715105/getting-404-page-on-page-refresh-using-node-and-angular-ap
+    this.app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, '../../www/index.html'));
+    });
     ConsoleUtil.log(listEndpoints(this.app));
   }
 
