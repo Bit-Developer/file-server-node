@@ -104,10 +104,10 @@ uploads/
 # dotenv environment variables file
 #.env
 .env.test
-#.env.dev
+.env.dev
 .env.stage
 .env.prod
 .env.private
 # configuration file genereated by start-config.ts
-#env.config.ts
+env.config.ts
 www
