@@ -36,7 +36,7 @@ npm run prod
 ### 3.3 Start server
 Then, copy all frontend files in `file-server-angular/dist` to `file-server-node/dist/wwww`.
 
-Copy all files to server.
+Copy all backend and frontend files to server.
 ```sh
 cd 'file-server-node'
 node './dist/src/server.js'
