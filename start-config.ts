@@ -14,7 +14,7 @@ const port = process.env.PORT ?? 5000;
 const root_dir = process.env.ROOT_DIR || '.';
 const web_root = process.env.WEB_ROOT || '.';
 const request_delay = process.env.REQUEST_DELAY || 0; // unit: seconds, 0: no delay
-const edit_mode = process.env.EDIT_MODE || 0; // unit: seconds, 0: no delay
+const edit_mode = process.env.EDIT_MODE || "true"; // true: editable, false: read-only
 
 // path of the config file
 const envConfigFile = `./src/config/env.config.ts`;

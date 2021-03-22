@@ -66,5 +66,6 @@ docker build -t jojozhuang/file-server-node .
 ```
 Create container.
 ```sh
-docker run --name file-server-node -p 12020:80 -v=/Users/i857285/Downloads:/app/root -v=/Users/i857285/Johnny/GitHub/file-server-angular/dist:/app/web -d jojozhuang/file-server-node
+docker run --name file-server -p 12020:80 -v=/var/services/video:/app/root -v=/var/services/web/fullstack-sites/file-server/www:/app/web -d jojozhuang/file-server-node
 ```
+Access http://192.168.0.2:12020/ in browser.

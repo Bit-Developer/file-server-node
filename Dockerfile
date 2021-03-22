@@ -1,3 +1,4 @@
+# https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 # https://medium.com/@VincentSchoener/development-of-nodejs-application-with-docker-and-typescript-part-2-4dd51c1e7766
 #
 # Builder stage.
@@ -16,6 +17,7 @@ COPY ./src ./src
 ENV PORT=80
 ENV ROOT_DIR='/app/root'
 ENV WEB_ROOT='/app/web'
+ENV EDIT_MODE='false'
 RUN npm ci --quiet && npm run build-prod
 
 #
