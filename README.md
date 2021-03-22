@@ -54,3 +54,17 @@ Kill it with PID.
 ```sh
 kill -9 3761
 ```
+
+## 5. Docker
+Build for production. All the compiled html files and js files will be generated in `dist`.
+```sh
+npm run build
+```
+Create image with nginx.
+```sh
+docker build -t jojozhuang/file-server-node .
+```
+Create container.
+```sh
+docker run --name file-server-node -p 12020:80 -v=/Users/i857285/Downloads:/app/root -v=/Users/i857285/Johnny/GitHub/file-server-angular/dist:/app/web -d jojozhuang/file-server-node
+```

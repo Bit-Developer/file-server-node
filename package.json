@@ -18,6 +18,7 @@
     "private": "NODE_ENV=private npm run start-config && npm run build && npm run start",
     "dev2": "ts-node ./src/server.ts",
     "build": "rimraf ./dist && tsc && cp -R -v src/public dist/src",
+    "build-prod": "ts-node start-config-prod && rimraf ./dist && tsc && cp -R -v src/public dist/src",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "jest"
   },
