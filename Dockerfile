@@ -42,5 +42,4 @@ RUN npm ci --quiet --only=production
 ## We just need the build to execute the command
 COPY --from=builder /usr/src/app ./build
 
-EXPOSE 9000
 CMD [ "node", "build/dist/src/server.js" ]
