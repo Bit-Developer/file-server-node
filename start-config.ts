@@ -10,7 +10,7 @@ ConsoleUtil.log('config WEB_ROOT:', process.env.WEB_ROOT);
 ConsoleUtil.log('config REQUEST_DELAY:', process.env.REQUEST_DELAY);
 ConsoleUtil.log('config EDIT_MODE:', process.env.EDIT_MODE);
 
-const port = process.env.PORT ?? 5000;
+const port = process.env.PORT ?? 12021;
 const root_dir = process.env.ROOT_DIR || '.';
 const web_root = process.env.WEB_ROOT || '.';
 const request_delay = process.env.REQUEST_DELAY || 0; // unit: seconds, 0: no delay

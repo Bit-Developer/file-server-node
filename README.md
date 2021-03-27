@@ -41,7 +41,7 @@ Copy all backend and frontend files to server.
 cd 'file-server-node'
 node './dist/src/server.js'
 ```
-Access `http://192.168.0.2:9900/`.
+Access `http://192.168.0.2:12020/`.
 
 ## 4. Troubleshooting
 ### 4.1 Stop Express Server
