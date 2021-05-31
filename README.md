@@ -60,7 +60,7 @@ Build for production. All the compiled html files and js files will be generated
 ```sh
 npm run build
 ```
-Create image with nginx.
+Create image with node.js.
 ```sh
 docker build -t jojozhuang/file-server-node .
 ```

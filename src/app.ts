@@ -67,7 +67,7 @@ class App {
     this.app.use('/api', routers);
     // serve static files
     this.app.use('/static', express.static(config.rootDir));
-    // serve angular frontend
+    // serve angular app(compiled static files)
     this.app.use(express.static(config.webDir));
 
     // fix 404 error after refresh page built with angular,
