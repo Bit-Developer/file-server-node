@@ -66,9 +66,9 @@ class App {
     // Use the root routes when path starts with /api
     this.app.use('/api', routers);
     // serve static files
-    this.app.use('/static', express.static(config.rootDir));
+    //this.app.use('/static', express.static(config.rootDir));
     // serve angular app(compiled static files)
-    this.app.use(express.static(config.webDir));
+    //this.app.use(express.static(config.webDir));
 
     // fix 404 error after refresh page built with angular,
     // see https://stackoverflow.com/questions/54715105/getting-404-page-on-page-refresh-using-node-and-angular-ap
