@@ -13,7 +13,7 @@ COPY ./src ./src
 ENV PORT=80 \
     ROOT_DIR='/app/root' \
     WEB_ROOT='/app/web' \
-    EDIT_MODE='false'
+    EDIT_MODE='true'
 
 RUN npm ci --quiet && npm run build-prod
 
